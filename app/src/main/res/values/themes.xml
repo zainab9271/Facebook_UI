@@ -30,6 +30,7 @@
     <style name="MyCardView">
         <item name="android:background">@drawable/cardview_shape</item>
         <item name="android:elevation">1dp</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">1dp</item>
     </style>
     <style name="MyCardView.Contents">
         <item name="android:padding">16dp</item>

@@ -2,4 +2,5 @@
 <resources>
     <dimen name="mainMenu_MainDimension">40dp</dimen>
     <dimen name="mainMarginStart">24dp</dimen>
+    <dimen name="ToolCardButtonsDim">30dp</dimen>
 </resources>

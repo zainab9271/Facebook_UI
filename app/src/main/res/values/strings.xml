@@ -5,4 +5,8 @@
     <string name="TextCallButton">Call</string>
     <string name="TextMessageButton">Message</string>
     <string name="TextMoreButton">More</string>
+    <string name="TextTimelineButton">Timeline</string>
+    <string name="TextAboutButton">About</string>
+    <string name="TextFriendsButton">Friends</string>
+    <string name="TextPhotosButton">Photos</string>
 </resources>
