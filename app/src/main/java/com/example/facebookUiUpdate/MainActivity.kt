@@ -3,6 +3,8 @@ package com.example.facebookUiUpdate
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageButton
+import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.facebookUiUpdate.databinding.ActivityMainBinding
 
@@ -22,19 +24,11 @@ class MainActivity : AppCompatActivity() {
         binding.seeMorePhotosButton.setOnClickListener {
             val situation = binding.seeMorePhotos.text.toString()
             var constraints = binding.seeMorePhotos.layoutParams as ConstraintLayout.LayoutParams
-            val constraintsCopy = constraints
+
             if (situation == "See More"){
-                binding.expandableImages.visibility = View.VISIBLE
-                constraints.topToBottom = binding.expandableImages.id
-                constraints.startToStart = binding.expandableImages.id
-                constraints.endToEnd = binding.expandableImages.id
-                binding.seeMorePhotos.text = "See Less"
-                binding.seeMorePhotosButton.setImageResource(R.drawable.ic_baseline_expand_less_24)
+                expand(binding.expandableImages,constraints, binding.seeMorePhotos, binding.seeMorePhotosButton)
             }else{
-                constraints = constraintsCopy
-                binding.expandableImages.visibility = View.GONE
-                binding.seeMorePhotos.text = "See More"
-                binding.seeMorePhotosButton.setImageResource(R.drawable.ic_baseline_expand_more_24)
+                shrink(binding.expandableImages,constraints, binding.seeMorePhotos, binding.seeMorePhotosButton)
             }
 
         }
@@ -42,20 +36,27 @@ class MainActivity : AppCompatActivity() {
         binding.seeMorefriendsButton.setOnClickListener {
             val situation = binding.seeMoreFriends.text.toString()
             var constraints = binding.seeMoreFriends.layoutParams as ConstraintLayout.LayoutParams
-            val constraintsCopy = constraints
             if (situation == "See More"){
-                binding.expandableFriends.visibility = View.VISIBLE
-                constraints.topToBottom = binding.expandableFriends.id
-                constraints.startToStart = binding.expandableFriends.id
-                constraints.endToEnd = binding.expandableFriends.id
-                binding.seeMoreFriends.text = "See Less"
-                binding.seeMorefriendsButton.setImageResource(R.drawable.ic_baseline_expand_less_24)
+                expand(binding.expandableFriends, constraints, binding.seeMoreFriends, binding.seeMorefriendsButton)
             }else{
-                constraints = constraintsCopy
-                binding.expandableFriends.visibility = View.GONE
-                binding.seeMoreFriends.text = "See More"
-                binding.seeMorefriendsButton.setImageResource(R.drawable.ic_baseline_expand_more_24)
+                shrink(binding.expandableFriends, constraints, binding.seeMoreFriends, binding.seeMorefriendsButton)
             }
         }
+    }
+
+    private fun shrink(layout: ConstraintLayout, constraints: ConstraintLayout.LayoutParams, view: TextView, button: ImageButton) {
+        layout.visibility = View.GONE
+        view.layoutParams = constraints
+        view.text = "See More"
+        button.setImageResource(R.drawable.ic_baseline_expand_more_24)
+    }
+
+    private fun expand(layout: ConstraintLayout, constraints: ConstraintLayout.LayoutParams, view: TextView, button: ImageButton) {
+        layout.visibility = View.VISIBLE
+        constraints.topToBottom = layout.id
+        constraints.startToStart = layout.id
+        constraints.endToEnd = layout.id
+        view.text = "See Less"
+        button.setImageResource(R.drawable.ic_baseline_expand_less_24)
     }
 }
