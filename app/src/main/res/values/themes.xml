@@ -1,0 +1,37 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <!-- Base application theme. -->
+    <style name="Theme.FacebookUIUpdate" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MainMenuButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/button_circular</item>
+        <item name="tint">#0081F7</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="MainMenuButton.Main">
+        <item name="android:layout_below">@+id/text_residence</item>
+        <item name="android:layout_marginStart">@dimen/mainMarginStart</item>
+    </style>
+    <style name="MainMenuButtonsTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="ToolsCardButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/toolscard_buttons_shape</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="MyCardView">
+        <item name="android:background">@drawable/cardview_shape</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+    <style name="MyCardView.Contents">
+        <item name="android:padding">16dp</item>
+    </style>
+</resources>

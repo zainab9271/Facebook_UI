@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">facebook UI update</string>
+    <string name="profile_name">Zainab Mahmood</string>
+    <string name="residence">Kirkuk, Iraq</string>
+    <string name="TextCallButton">Call</string>
+    <string name="TextMessageButton">Message</string>
+    <string name="TextMoreButton">More</string>
+</resources>
