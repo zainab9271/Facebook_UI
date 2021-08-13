@@ -9,4 +9,5 @@
     <string name="TextAboutButton">About</string>
     <string name="TextFriendsButton">Friends</string>
     <string name="TextPhotosButton">Photos</string>
+    <string name="photosCard">Photos</string>
 </resources>

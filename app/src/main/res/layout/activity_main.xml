@@ -299,10 +299,8 @@
                     android:id="@+id/title_photosCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Photos"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
+                    android:text="@string/photosCard"
+                    style="@style/CardTitle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -310,9 +308,8 @@
                     android:id="@+id/photosNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    style="@style/CardTitleAppend"
                     android:text="780"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
                     app:layout_constraintBottom_toBottomOf="@id/title_photosCard"
                     app:layout_constraintStart_toEndOf="@id/title_photosCard"
                     app:layout_constraintTop_toTopOf="@id/title_photosCard" />
@@ -321,11 +318,8 @@
                     android:id="@+id/photosCardIcon"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/ic_outline_image_24"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:tint="#0081F7" />
+                    style="@style/MyCardIcon"
+                    android:src="@drawable/ic_outline_image_24" />
                 <!-- the following contains both visible and expandable part -->
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -442,10 +436,8 @@
                         android:id="@+id/seeMore_photos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:elevation="1dp"
                         android:text="See More"
-                        android:textColor="@color/black"
+                        style="@style/SeeMoreText"
                         app:layout_constraintEnd_toEndOf="@id/visible_images"
                         app:layout_constraintStart_toStartOf="@id/visible_images"
                         app:layout_constraintTop_toBottomOf="@id/visible_images" />
@@ -454,10 +446,7 @@
                         android:id="@+id/seeMorePhotos_button"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_marginTop="-10dp"
-                        android:background="@drawable/toolscard_buttons_shape"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_baseline_expand_more_24"
+                        style="@style/SeeMoreButton"
                         app:layout_constraintEnd_toEndOf="@id/seeMore_photos"
                         app:layout_constraintStart_toStartOf="@id/seeMore_photos"
                         app:layout_constraintTop_toBottomOf="@id/seeMore_photos" />
@@ -479,9 +468,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Friends"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
+                    style="@style/CardTitle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -489,9 +476,8 @@
                     android:id="@+id/friendsNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    style="@style/CardTitleAppend"
                     android:text="530"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
                     app:layout_constraintBottom_toBottomOf="@id/title_friendsCard"
                     app:layout_constraintStart_toEndOf="@id/title_friendsCard"
                     app:layout_constraintTop_toTopOf="@id/title_friendsCard" />
@@ -500,11 +486,8 @@
                     android:id="@+id/friendsCardIcon"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/ic_baseline_supervisor_account_24"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:tint="#0081F7" />
+                    style="@style/MyCardIcon"
+                    android:src="@drawable/ic_baseline_supervisor_account_24" />
                 <!-- the following contains both visible and expandable part -->
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -536,9 +519,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Noor Ali"
-                            android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
+                            style="@style/FriendsName"
                             app:layout_constraintEnd_toEndOf="@id/friend1"
                             app:layout_constraintStart_toStartOf="@id/friend1"
                             app:layout_constraintTop_toBottomOf="@id/friend1" />
@@ -571,9 +552,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Huda Mahdi"
-                            android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
+                            style="@style/FriendsName"
                             app:layout_constraintEnd_toEndOf="@id/friend2"
                             app:layout_constraintStart_toStartOf="@id/friend2"
                             app:layout_constraintTop_toBottomOf="@id/friend2" />
@@ -606,9 +585,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Hale Sabah"
-                            android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
+                            style="@style/FriendsName"
                             app:layout_constraintEnd_toEndOf="@id/friend3"
                             app:layout_constraintStart_toStartOf="@id/friend3"
                             app:layout_constraintTop_toBottomOf="@id/friend3" />
@@ -628,9 +605,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Isra M. K."
-                            android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
+                            style="@style/FriendsName"
                             app:layout_constraintEnd_toEndOf="@id/friend4"
                             app:layout_constraintStart_toStartOf="@id/friend4"
                             app:layout_constraintTop_toBottomOf="@id/friend4" />
@@ -663,9 +638,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mary Fares"
-                            android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
+                            style="@style/FriendsName"
                             app:layout_constraintEnd_toEndOf="@id/friend5"
                             app:layout_constraintStart_toStartOf="@id/friend5"
                             app:layout_constraintTop_toBottomOf="@id/friend5"/>
@@ -696,9 +669,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Alya Mufid"
-                            android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
+                            style="@style/FriendsName"
                             app:layout_constraintEnd_toEndOf="@id/friend7"
                             app:layout_constraintStart_toStartOf="@id/friend7"
                             app:layout_constraintTop_toBottomOf="@id/friend7" />
@@ -708,9 +679,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mina Saad"
-                            android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
+                            style="@style/FriendsName"
                             app:layout_constraintEnd_toEndOf="@id/friend6"
                             app:layout_constraintStart_toStartOf="@id/friend6"
                             app:layout_constraintTop_toBottomOf="@id/friend6" />
@@ -731,9 +700,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Muna Khalil"
-                            android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
+                            style="@style/FriendsName"
                             app:layout_constraintEnd_toEndOf="@id/friend8"
                             app:layout_constraintStart_toStartOf="@id/friend8"
                             app:layout_constraintTop_toBottomOf="@id/friend8" />
@@ -743,10 +710,8 @@
                         android:id="@+id/seeMore_friends"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:elevation="1dp"
+                        style="@style/SeeMoreText"
                         android:text="See More"
-                        android:textColor="@color/black"
                         app:layout_constraintEnd_toEndOf="@id/visible_friends"
                         app:layout_constraintStart_toStartOf="@id/visible_friends"
                         app:layout_constraintTop_toBottomOf="@id/visible_friends" />
@@ -755,10 +720,7 @@
                         android:id="@+id/seeMorefriends_button"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_marginTop="-10dp"
-                        android:background="@drawable/toolscard_buttons_shape"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/ic_baseline_expand_more_24"
+                        style="@style/SeeMoreButton"
                         app:layout_constraintEnd_toEndOf="@id/seeMore_friends"
                         app:layout_constraintStart_toStartOf="@id/seeMore_friends"
                         app:layout_constraintTop_toBottomOf="@id/seeMore_friends" />
