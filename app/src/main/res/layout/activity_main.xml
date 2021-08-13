@@ -160,16 +160,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/divider"
-                android:background="@drawable/cardview_shape"
-                android:layout_marginHorizontal="1dp"
-                android:elevation="1dp"
+                style="@style/MyCardView"
                 android:paddingVertical="8dp">
 
                 <ImageButton
                     android:id="@+id/timeline_button"
+                    style="@style/ToolsCardButton"
                     android:layout_width="@dimen/ToolCardButtonsDim"
                     android:layout_height="@dimen/ToolCardButtonsDim"
-                    style="@style/ToolsCardButton"
                     android:src="@drawable/ic_baseline_timeline_24"
                     app:layout_constraintEnd_toStartOf="@+id/about_button"
                     app:layout_constraintStart_toStartOf="parent"
@@ -187,9 +185,9 @@
 
                 <ImageButton
                     android:id="@+id/about_button"
+                    style="@style/ToolsCardButton"
                     android:layout_width="@dimen/ToolCardButtonsDim"
                     android:layout_height="@dimen/ToolCardButtonsDim"
-                    style="@style/ToolsCardButton"
                     android:src="@drawable/ic_baseline_person_24"
                     app:layout_constraintEnd_toStartOf="@+id/friends_button"
                     app:layout_constraintStart_toEndOf="@+id/timeline_button"
@@ -207,9 +205,9 @@
 
                 <ImageButton
                     android:id="@+id/friends_button"
+                    style="@style/ToolsCardButton"
                     android:layout_width="@dimen/ToolCardButtonsDim"
                     android:layout_height="@dimen/ToolCardButtonsDim"
-                    style="@style/ToolsCardButton"
                     android:src="@drawable/ic_baseline_supervisor_account_24"
                     app:layout_constraintEnd_toStartOf="@+id/photos_button"
                     app:layout_constraintStart_toEndOf="@+id/about_button"
@@ -227,10 +225,10 @@
 
                 <ImageButton
                     android:id="@+id/photos_button"
+                    style="@style/ToolsCardButton"
                     android:layout_width="@dimen/ToolCardButtonsDim"
                     android:layout_height="@dimen/ToolCardButtonsDim"
                     android:layout_marginEnd="40dp"
-                    style="@style/ToolsCardButton"
                     android:src="@drawable/ic_outline_image_24"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/friends_button"
@@ -247,10 +245,10 @@
                     app:layout_constraintTop_toBottomOf="@id/photos_button" />
 
                 <ImageButton
+                    style="@style/ToolsCardButton"
                     android:layout_width="@dimen/ToolCardButtonsDim"
                     android:layout_height="@dimen/ToolCardButtonsDim"
                     android:layout_marginEnd="16dp"
-                    style="@style/ToolsCardButton"
                     android:src="@drawable/ic_baseline_more_vert_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -273,11 +271,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/toolsCard"
-                android:padding="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toEndOf="@id/user_image"
                 android:background="@drawable/edittext_shape"
                 android:hint="Write something to Zainab..."
+                android:padding="10dp"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
             <ImageButton
@@ -295,10 +293,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/user_image"
-                android:background="@drawable/cardview_shape"
-                android:elevation="1dp"
-                android:layout_marginHorizontal="1dp"
-                android:padding="16dp">
+                style="@style/MyCardView.Contents">
 
                 <TextView
                     android:id="@+id/title_photosCard"
@@ -476,11 +471,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/photos_card"
-                android:layout_marginHorizontal="1dp"
                 android:layout_marginVertical="16dp"
-                android:background="@drawable/cardview_shape"
-                android:elevation="1dp"
-                android:padding="16dp">
+                style="@style/MyCardView.Contents">
 
                 <TextView
                     android:id="@+id/title_friendsCard"
